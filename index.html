@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="개발자 포트폴리오를 위한 GitHub Pages 정적 웹사이트 템플릿입니다."
+    >
+    <title>홍길동 | 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="주요 메뉴">
+        <a class="brand" href="#top" aria-label="홈으로 이동">
+          <span class="brand-mark" aria-hidden="true">HG</span>
+          <span>Portfolio</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span class="menu-toggle__bar" aria-hidden="true"></span>
+          <span class="sr-only">메뉴 열기</span>
+        </button>
+
+        <div class="site-menu" id="site-menu">
+          <a href="#about" data-nav-link>소개</a>
+          <a href="#skills" data-nav-link>기술</a>
+          <a href="#projects" data-nav-link>프로젝트</a>
+          <a href="#experience" data-nav-link>활동</a>
+          <a href="#contact" data-nav-link>연락처</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-anchor" id="top" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Developer Portfolio Template</p>
+            <h1 id="hero-title">홍길동</h1>
+            <p class="hero__role">제품의 문제를 끝까지 추적하는 프론트엔드 개발자</p>
+            <p class="hero__intro">
+              사용자 흐름, 성능, 협업 맥락을 함께 보는 개발자입니다. 복잡한 요구사항을
+              읽기 쉬운 인터페이스와 유지보수 가능한 코드로 바꾸는 일을 좋아합니다.
+            </p>
+            <div class="hero__actions" aria-label="주요 링크">
+              <a class="button button--primary" href="#projects">프로젝트 보기</a>
+              <a class="button button--secondary" href="mailto:hello@example.com">메일 보내기</a>
+            </div>
+            <dl class="hero__stats" aria-label="요약 지표">
+              <div>
+                <dt>4년+</dt>
+                <dd>제품 개발 경험</dd>
+              </div>
+              <div>
+                <dt>12개</dt>
+                <dd>출시 및 개선 프로젝트</dd>
+              </div>
+              <div>
+                <dt>3분</dt>
+                <dd>핵심 역량 확인</dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="hero__media">
+            <img
+              src="./assets/portfolio-hero.png"
+              alt="노트북과 추상적인 제품 인터페이스 패널로 구성된 개발 워크스페이스"
+              width="1717"
+              height="916"
+            >
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--intro section-anchor" id="about" aria-labelledby="about-title">
+        <div class="container section__grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">문제를 구조화하고, 작게 출시하고, 빠르게 배웁니다.</h2>
+          </div>
+          <div class="section-copy">
+            <p>
+              이 영역에는 본인의 개발 철학과 강점을 적습니다. 예를 들어 제품 지표를
+              읽는 방식, 팀과 협업하는 방식, 사용자의 불편을 기술적으로 해결한 경험을
+              짧고 구체적으로 소개할 수 있습니다.
+            </p>
+            <div class="strength-list" aria-label="핵심 강점">
+              <article>
+                <strong>제품 감각</strong>
+                <span>요구사항의 배경을 이해하고 우선순위를 명확히 합니다.</span>
+              </article>
+              <article>
+                <strong>인터페이스 품질</strong>
+                <span>접근성, 반응형, 상태 처리를 안정적으로 다룹니다.</span>
+              </article>
+              <article>
+                <strong>지속 가능한 코드</strong>
+                <span>작은 단위의 컴포넌트와 명확한 데이터 흐름을 선호합니다.</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">기술은 목적에 맞게 선택합니다.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul class="tag-list" aria-label="프론트엔드 기술">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>TypeScript</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Product</h3>
+              <ul class="tag-list" aria-label="제품 개발 역량">
+                <li>UX Writing</li>
+                <li>Analytics</li>
+                <li>A/B Test</li>
+                <li>Accessibility</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Engineering</h3>
+              <ul class="tag-list" aria-label="엔지니어링 역량">
+                <li>Testing</li>
+                <li>CI/CD</li>
+                <li>Performance</li>
+                <li>API Design</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--projects section-anchor" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="projects-head">
+            <div>
+              <p class="eyebrow">Selected Projects</p>
+              <h2 id="projects-title">대표 프로젝트</h2>
+            </div>
+            <div class="filter-group" aria-label="프로젝트 필터">
+              <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">전체</button>
+              <button type="button" class="filter-button" data-filter="product" aria-pressed="false">제품</button>
+              <button type="button" class="filter-button" data-filter="automation" aria-pressed="false">자동화</button>
+              <button type="button" class="filter-button" data-filter="system" aria-pressed="false">시스템</button>
+            </div>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-project-card data-category="product">
+              <img
+                src="./assets/project-analytics.png"
+                alt="분석 대시보드 형태의 프로젝트 썸네일"
+                width="960"
+                height="600"
+                loading="lazy"
+              >
+              <div class="project-card__body">
+                <p class="project-card__type">Product Analytics</p>
+                <h3>전환율 개선 대시보드</h3>
+                <p>
+                  문제: 흩어진 이벤트 데이터를 한 화면에서 보기 어려웠습니다.
+                  해결: 핵심 퍼널과 실험 결과를 빠르게 비교하는 대시보드를 설계했습니다.
+                </p>
+                <ul class="tag-list">
+                  <li>React</li>
+                  <li>Chart</li>
+                  <li>UX</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" aria-label="전환율 개선 대시보드 데모 링크 자리표시자">Demo</a>
+                  <a href="#" aria-label="전환율 개선 대시보드 코드 링크 자리표시자">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-card data-category="automation">
+              <img
+                src="./assets/project-automation.png"
+                alt="자동화 워크플로우 형태의 프로젝트 썸네일"
+                width="960"
+                height="600"
+                loading="lazy"
+              >
+              <div class="project-card__body">
+                <p class="project-card__type">Automation</p>
+                <h3>운영 업무 자동화 도구</h3>
+                <p>
+                  문제: 반복 검수와 알림 작업이 릴리즈 속도를 늦췄습니다.
+                  해결: 상태 변화에 따라 검증과 알림을 처리하는 워크플로우를 만들었습니다.
+                </p>
+                <ul class="tag-list">
+                  <li>Node.js</li>
+                  <li>API</li>
+                  <li>CI</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" aria-label="운영 업무 자동화 도구 데모 링크 자리표시자">Demo</a>
+                  <a href="#" aria-label="운영 업무 자동화 도구 코드 링크 자리표시자">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-card data-category="system">
+              <img
+                src="./assets/project-design-system.png"
+                alt="디자인 시스템 컴포넌트 형태의 프로젝트 썸네일"
+                width="960"
+                height="600"
+                loading="lazy"
+              >
+              <div class="project-card__body">
+                <p class="project-card__type">Design System</p>
+                <h3>컴포넌트 라이브러리 정비</h3>
+                <p>
+                  문제: 화면마다 다른 UI 규칙 때문에 유지보수가 어려웠습니다.
+                  해결: 공통 컴포넌트와 상태 규칙을 정리해 개발 속도와 일관성을 높였습니다.
+                </p>
+                <ul class="tag-list">
+                  <li>CSS</li>
+                  <li>Storybook</li>
+                  <li>A11y</li>
+                </ul>
+                <div class="project-links">
+                  <a href="#" aria-label="컴포넌트 라이브러리 정비 데모 링크 자리표시자">Demo</a>
+                  <a href="#" aria-label="컴포넌트 라이브러리 정비 코드 링크 자리표시자">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="experience" aria-labelledby="experience-title">
+        <div class="container section__grid">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">경험과 활동</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time datetime="2025">2025 - 현재</time>
+              <div>
+                <h3>제품 팀 프론트엔드 개발자</h3>
+                <p>핵심 사용자 흐름 개선, 실험 플랫폼, 성능 최적화 작업을 담당했습니다.</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2023">2023 - 2025</time>
+              <div>
+                <h3>웹 서비스 개발 및 운영</h3>
+                <p>관리자 도구, 고객 대시보드, 자동화 파이프라인을 개발했습니다.</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2022">2022 - 2023</time>
+              <div>
+                <h3>오픈소스와 학습 커뮤니티</h3>
+                <p>스터디 발표, 문서 기여, 팀 프로젝트 리딩 경험을 쌓았습니다.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--contact section-anchor" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">함께 만들고 싶은 일이 있다면 연락해 주세요.</h2>
+            <p>
+              아래 정보는 자리표시자입니다. 실제 이메일, GitHub, LinkedIn 주소로 바꾸면
+              바로 개인 포트폴리오로 사용할 수 있습니다.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+            <a class="contact-link" href="https://github.com/your-username">github.com/your-username</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a>
+            <button class="button button--primary" type="button" data-copy-email="hello@example.com">
+              이메일 복사
+            </button>
+            <p class="copy-status" aria-live="polite" data-copy-status></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 홍길동. Built for GitHub Pages.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
